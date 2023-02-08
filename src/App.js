@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
+import { AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import "./sass/main.scss";
 
 // Components

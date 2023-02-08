@@ -18,7 +18,7 @@ const Header = () => {
       }}
       className='header'>
       <div className='header-inner'>
-        <div className='logo'>hugo lopez</div>
+        <div className='logo'>welcome!</div>
         
         <motion.div
         initial={{ scale: 0 }}
