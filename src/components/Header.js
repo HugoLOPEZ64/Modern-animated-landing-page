@@ -1,6 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { BsGithub } from "react-icons/bs";
+
+import { MdEmail } from "react-icons/md";
+
+import { IoMdContact, IoLogoLinkedin } from "react-icons/io";
+import { RiGithubFill } from "react-icons/ri";
 
 const Header = () => {
   return (
@@ -16,9 +20,34 @@ const Header = () => {
       <div className='header-inner'>
         <div className='logo'>hugo lopez</div>
         
-        <div className='contact'>
-          <a href="mailto:hugo.lopez002@gmail.com">contact me</a>
-        </div>
+        <motion.div
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 1, delay: 1 }}
+        className='scroll'>
+        <motion.span
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            ease: "easeInOut",
+            duration: 1,
+            delay: 1.8,
+          }}>
+          <a className='github' href='https://hugolopez.me'> <IoMdContact/> </a>
+          <a className='github' href='https://github.com/HugoLOPEZ64'> <RiGithubFill/> </a>  
+        </motion.span>
+        <motion.span
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            ease: "easeInOut",
+            duration: 1,
+            delay: 1.8,
+          }}>
+          <a className='linkedin' href='mailto:hugo.lopez002@gmail.com'> <MdEmail/> </a>
+          <a className='linkedin' href='https://www.linkedin.com/in/hugolopez64/'> <IoLogoLinkedin/> </a>
+        </motion.span>
+      </motion.div>
         
       </div>
     </motion.div>

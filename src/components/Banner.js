@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+
 
 const banner = {
   animate: {
@@ -71,7 +71,7 @@ const BannerRowTop = ({ title }) => {
         }}
         className='row-col'>
         <span className='row-message'>
-          I am a web developer with a natural appetency for front-end programming.
+          I am a web developer with a natural appetency for front-end programming
         </span>
       </motion.div>
     </div>
@@ -94,8 +94,7 @@ const BannerRowBottom = ({ title }) => {
             duration: 1,
             delay: 1.8,
           }}>
-          <a className='github' href='https://github.com/HugoLOPEZ64'> <BsGithub/> </a>
-          <a className='github' href='https://github.com/HugoLOPEZ64'> <BsGithub/> </a>  
+          <p>see you</p>
         </motion.span>
         <motion.span
           initial={{ opacity: 0 }}
@@ -105,8 +104,7 @@ const BannerRowBottom = ({ title }) => {
             duration: 1,
             delay: 1.8,
           }}>
-          <a className='linkedin' href='https://www.linkedin.com/in/hugolopez64/'> <BsLinkedin/> </a>
-          <a className='linkedin' href='https://www.linkedin.com/in/hugolopez64/'> <BsLinkedin/> </a>
+          <p>soon !</p>
         </motion.span>
       </motion.div>
       <AnimatedLetters title={title} />

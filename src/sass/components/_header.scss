@@ -28,26 +28,15 @@
         flex: 4;
       }
     }
-    .nav {
-      @media (max-width: $layout-breakpoint-medium) {
-        display: none;
-      }
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      li {
-        list-style: none;
-        margin: 0 40px;
-        a {
-          text-decoration: none;
-          color: $black;
-          white-space: nowrap;
-        }
-      }
+    .github {
+      text-decoration: none;
+      color: $black;
     }
+    .linkedin {
+      text-decoration: none;
+      color: $black;
+    }
+    
     .contact {
       @media (max-width: $layout-breakpoint-medium) {
         flex: 1;
@@ -60,6 +49,35 @@
         white-space: nowrap;
         @media (max-width: $layout-breakpoint-xsmall) {
           border: none;
+        }
+      }
+    }
+    .scroll {
+      height: 100px;
+      width: 100px;
+      border-radius: 100%;
+      background: $white;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      right: 160px;
+      
+      
+      @media (max-width: $layout-breakpoint-medium) {
+        left: 60px;
+      }
+      @media (max-width: 1240px) {
+        display: none;
+      }
+      span {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 4px 0;
+        @media (max-width: $layout-breakpoint-xsmall) {
+          font-size: 10px;
+          margin: 2px 0;
         }
       }
     }
